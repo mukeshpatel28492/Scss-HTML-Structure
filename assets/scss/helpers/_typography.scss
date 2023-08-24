@@ -1,0 +1,111 @@
+@import "variable";
+@import "mixin";
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	margin-bottom: size(16);
+}
+/*Headings*/
+h1, .h1{
+	font-family: $font-family-base;
+	font-weight: $font-extraBold;
+	font-size:size(60); 
+	line-height:size(70);
+	@include media(down, $breakpoint-xl) {
+		font-size:size(50); 
+		line-height:size(60);
+	}
+	@include media(down, $breakpoint-md) {
+		font-size:size(36); 
+		line-height:size(46);
+	}
+
+}
+h2, .h2 { 
+	font-family: $font-family-base;
+	font-weight: $font-bold;
+	font-size:size(40); 
+	line-height:size(50);
+	@include media(down, $breakpoint-xl) {
+		font-size:size(30); 
+	    line-height:size(40);
+	}
+	@include media(down, $breakpoint-md) {
+		font-size:size(28); 
+		line-height:size(38);
+	}
+}
+h3, .h3 { 
+	font-family: $font-family-base;
+	font-weight: $font-semibold;
+	font-size:size(30); 
+	line-height:size(40);
+	@include media(down, $breakpoint-xl) {
+		font-size:size(24); 
+		line-height:size(34);
+	}
+	@include media(down, $breakpoint-md) {
+		font-size:size(22); 
+		line-height:size(32);
+	}
+}
+h4, .h4 { 
+	font-family: $font-family-base;
+	font-weight: $font-semibold;
+	font-size:size(24); 
+	line-height:size(34);
+	@include media(down, $breakpoint-xl) {
+		font-size:size(22); 
+		line-height:size(32);
+	}
+	@include media(down, $breakpoint-md) {
+		font-size:size(20); 
+		line-height:size(30);
+	}
+}
+h5, .h5 { 
+	font-family: $font-family-base;
+	font-weight: $font-semibold;
+	font-size:size(20); 
+	line-height:size(30);
+	@include media(down, $breakpoint-xl) {
+		font-size: size(18);
+		line-height: size(28);
+	}
+}
+h6, .h6 { 
+	font-family: $font-family-base;
+	font-weight: $font-regular;
+	font-size: size(18);
+	line-height: size(28);
+	@include media(down, $breakpoint-xl) {
+		font-size: size(16);
+		line-height: size(26);
+	}
+}
+
+p{
+	font-family: $font-family-base;
+	font-weight: $font-regular;
+	font-size: size(16);
+	line-height: size(26);
+	color: $gray;
+}
+a {
+    color: $black;
+	text-decoration: none;
+	font-size: size(16);
+	line-height: size(26);
+	font-weight: $font-medium;
+	@include Transition(all 0.3s ease-in-out);
+    &:hover {
+        text-decoration: none;
+       	color: $foot-fill;
+        outline: none;
+    }
+}
+
+ul, li {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}

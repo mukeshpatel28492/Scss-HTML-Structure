@@ -1,0 +1,106 @@
+/* =========== IMAGE PATH VARIABLE ============= */
+$assetPath : "/assets/images";
+/* Usage of bacground image */
+//background: url(#{$assetPath}/background.jpg) repeat-x fixed 0 0;
+
+// Color system
+$primary     : #81CEF1;   
+$secondary   : #ECB7D3;  
+$warning     : #FFED00;  
+$danger      : #BD2052;
+$light-green : #62BD95;
+$semi-green  : #9FD1B8 ;
+$light-pink   : #F16278; 
+$success     : #54C200;
+$info        : #00AAC6;
+$lavender    : #8C4B9D;
+$dark        : #252525;   
+$black       : #000000 ;
+$white       : #ffffff;
+$gray        : #6f6f6f;
+$form-bg     :#b7e5f9;
+$foot-fill :#00AEF2;
+$light-orange: #FECD07;
+$border-color: rgba($gray, 40%);
+
+// Body
+// Settings for the `<body>` element.
+$body-bg: $white;
+$body-color: $black;
+
+// Links
+// Style anchor elements.
+$link-color:theme-color("primary");
+$link-decoration:none;
+$link-hover-color:darken($primary, 50%);
+$link-hover-decoration:underline;
+
+// Font
+$font-family-base: 'Poppins', sans-serif;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px` 
+$font-custom:16;
+$font-size-sm: $font-size-base * .875; //14px
+$font-light: 300;
+$font-regular:400;
+$font-medium:500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extraBold: 800;
+$line-height-base: 1.25;
+
+// Style p element.
+$paragraph-margin-bottom:   1rem;
+
+// Media BreakPoint
+$breakpoint-xxl: 1440px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 414px;
+
+// Components
+// Define common padding and border radius sizes and more.
+$border-width:1px;
+$border-color:#6c757d;
+
+$border-radius: 0.25rem; // 4px
+$border-radius-6:0.375rem; // 6px
+$border-radius-12:0.75rem; // 12px
+$border-radius-16:1rem; // 16px
+$border-radius-24:1.5rem; // 24px
+$border-radius-32:2rem; // 32px
+$rounded-pill: 6.25rem; // 100px
+
+$box-shadow-sm:0 .125rem .25rem rgba($black, .075);
+$box-shadow:0 .5rem 1rem rgba($black, .15);
+$box-shadow-lg:0 1rem 3rem rgba($black, .175);
+$box-shadow-0:none;
+
+$transition-base:all .2s ease-in-out;
+$transition-fade:opacity .15s linear;
+$transition-collapse:height .35s ease;
+
+//Gradiant Style
+$fallback:$primary;
+$from:$primary;
+$to:darken($primary,10);
+$direction:225deg;
+
+// Spacing
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+  ),
+  $spacers
+);
